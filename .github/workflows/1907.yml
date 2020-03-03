@@ -7,12 +7,12 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: x86 laen
+name: x86 1907
 
 on:
   push:
     branches: 
-      - dev-laen-laen
+      - dev-19.07
   # schedule:
   #   - cron: 0 20 * * *
   # release:
@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
-          ref: dev-laen-laen
+          ref: dev-19.07
 
       - name: Space cleanup
         env:
